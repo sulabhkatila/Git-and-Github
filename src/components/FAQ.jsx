@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const faqQuestions = [
     {
@@ -51,7 +51,7 @@ const faqQuestions = [
     }
 ];
 
-const FAQ = () => {
+export default function FAQ() {
   const [faqData, setFaqData] = useState([]);
   const [expandedItems, setExpandedItems] = useState({});
 
@@ -60,7 +60,7 @@ const FAQ = () => {
       const loadedData = await Promise.all(
         faqQuestions.map(async (item) => {
           try {
-            const response = await fetch(`features/${item.file}`);
+            const response = await fetch(`/Git-and-Github/features/${item.file}`);
             if (!response.ok) {
               throw new Error(`HTTP error! status: ${response.status}`);
             }
@@ -167,5 +167,3 @@ const FAQ = () => {
     </section>
   );
 };
-
-export default FAQ;
