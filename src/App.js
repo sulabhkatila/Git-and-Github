@@ -49,7 +49,7 @@ function App() {
             {/* Main Content */}
             <main className="main-content">
                 {/* Hero Section */}
-                <section className="hero-section">
+                <section className="hero-section" id="about">
                     <div className="container">
                         <div className="hero-content">
                             <h2>

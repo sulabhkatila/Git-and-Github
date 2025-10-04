@@ -8,6 +8,11 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px; /* Account for sticky header */
+}
+
 body {
   font-family: 'Inter', sans-serif;
   line-height: 1.6;
@@ -110,16 +115,61 @@ body {
   padding: 0.5rem 1rem;
   border-radius: 5px;
   transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
 }
 
 .nav-menu a:hover {
   background-color: rgba(255, 255, 255, 0.1);
   transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.nav-menu a:active {
+  transform: translateY(0);
+}
+
+/* Add a subtle animation for smooth scrolling feedback */
+.nav-menu a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #ffd700;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-menu a:hover::after {
+  width: 80%;
 }
 
 /* Main Content */
 .main-content {
   flex: 1;
+}
+
+/* Section scroll animations */
+section {
+  transition: all 0.3s ease;
+}
+
+section:target {
+  animation: highlightSection 0.5s ease-in-out;
+}
+
+@keyframes highlightSection {
+  0% {
+    background-color: transparent;
+  }
+  50% {
+    background-color: rgba(255, 215, 0, 0.1);
+  }
+  100% {
+    background-color: transparent;
+  }
 }
 
 /* Hero Section */
