@@ -2,6 +2,23 @@
   text-align: center;
 }
 
+.beta-banner {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.beta-banner p {
+  margin: 0;
+  font-size: 14px;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
