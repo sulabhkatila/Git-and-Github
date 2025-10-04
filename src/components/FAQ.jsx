@@ -117,7 +117,7 @@ export default function FAQ() {
     }));
   };
 
-  const MissingFeature = ({ ticket, question }) => (
+  const MissingFeature = ({ ticket, question, filename }) => (
     <div className="missing-feature">
       <div className="missing-feature-content">
         <span className="missing-icon">🚧</span>
@@ -130,7 +130,7 @@ export default function FAQ() {
         <p>📝 To implement this feature:</p>
         <ol>
           <li>Fork this repository</li>
-          <li>Edit <code>features/{ticket.toLowerCase().replace('faq-', '')}.txt</code></li>
+          <li>Edit <code>features/{filename}</code></li>
           <li>Add the answer content to the file</li>
           <li>Commit and push your changes</li>
           <li>Create a Pull Request</li>
@@ -174,6 +174,7 @@ export default function FAQ() {
                     <MissingFeature 
                       ticket={item.ticket} 
                       question={item.question}
+                      filename={item.file}
                     />
                   )}
                 </div>
