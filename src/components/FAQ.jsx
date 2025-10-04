@@ -61,12 +61,16 @@ const FAQ = () => {
         faqQuestions.map(async (item) => {
           try {
             const response = await fetch(`features/${item.file}`);
+            if (!response.ok) {
+              throw new Error(`HTTP error! status: ${response.status}`);
+            }
             const text = await response.text();
-            const hasAnswer = text.trim().length > 0;
+            const trimmedText = text.trim();
+            const hasAnswer = trimmedText.length > 0;
             
             return {
               ...item,
-              answer: text.trim(),
+              answer: trimmedText,
               hasAnswer,
               isLoading: false
             };
@@ -144,7 +148,9 @@ const FAQ = () => {
                 <div className="faq-answer">
                   {item.hasAnswer ? (
                     <div className="faq-answer-content">
-                      <p>{item.answer}</p>
+                      {item.answer.split('\n').map((line, index) => (
+                        <p key={index}>{line || '\u00A0'}</p>
+                      ))}
                     </div>
                   ) : (
                     <MissingFeature 
