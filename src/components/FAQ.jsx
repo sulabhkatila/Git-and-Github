@@ -1,10 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const FAQ = () => {
-  const [faqData, setFaqData] = useState([]);
-  const [expandedItems, setExpandedItems] = useState({});
-
-  const faqQuestions = [
+const faqQuestions = [
     {
       id: 'majors',
       question: 'What majors are offered at Saint Joseph\'s University, New York?',
@@ -53,7 +49,11 @@ const FAQ = () => {
       file: 'support-services.txt',
       ticket: 'FAQ-008'
     }
-  ];
+];
+
+const FAQ = () => {
+  const [faqData, setFaqData] = useState([]);
+  const [expandedItems, setExpandedItems] = useState({});
 
   useEffect(() => {
     const loadFAQData = async () => {
