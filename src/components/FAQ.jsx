@@ -9,13 +9,13 @@ const faqQuestions = [
     },
     {
       id: 'mascots',
-      question: 'What are the mascots for Brooklyn and Long Island campuses?',
+      question: 'What are the name of the mascot for Brooklyn campus?',
       file: 'mascots.txt',
       ticket: 'FAQ-002'
     },
     {
       id: 'addresses',
-      question: 'What are the full addresses of the Brooklyn and Long Island campuses?',
+      question: 'What is the full address of the Brooklyn campus?',
       file: 'addresses.txt',
       ticket: 'FAQ-003'
     },
@@ -48,7 +48,25 @@ const faqQuestions = [
       question: 'Are student support services like counseling and tutoring available?',
       file: 'support-services.txt',
       ticket: 'FAQ-008'
-    }
+    },
+    {
+      id: 'buildings_numbers',
+      question: 'How many buildings are there on the Brooklyn campus?',
+      file: 'number_of_buildings.txt',
+      ticket: 'FAQ-009'
+    },
+    {
+      id: 'buildings_names',
+      question: 'What are the names of the buildings on the Brooklyn and Long Island campuses?',
+      file: 'buildings_names.txt',
+      ticket: 'FAQ-010'
+    },
+    {
+      id: 'common_hour',
+      question: 'What time does the common hour start on the Brooklyn campus?',
+      file: 'common_hour.txt',
+      ticket: 'FAQ-011'
+    },
 ];
 
 export default function FAQ() {
