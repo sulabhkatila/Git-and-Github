@@ -34,16 +34,10 @@ function App() {
                             <a href="#about">About</a>
                         </li>
                         <li>
-                            <a href="#admissions">Admissions</a>
-                        </li>
-                        <li>
                             <a href="#academics">Academics</a>
                         </li>
                         <li>
                             <a href="#campus-life">Campus Life</a>
-                        </li>
-                        <li>
-                            <a href="#research">Research</a>
                         </li>
                         <li>
                             <a href="#contact">Contact</a>
@@ -158,7 +152,6 @@ function App() {
                     </div>
                 </section>
 
-
                 {/* Campus Life */}
                 <section className="campus-life-section" id="campus-life">
                     <div className="container">
@@ -228,9 +221,6 @@ function App() {
                         <div className="footer-section">
                             <h3>Quick Links</h3>
                             <ul>
-                                <li>
-                                    <a href="#admissions">Admissions</a>
-                                </li>
                                 <li>
                                     <a href="#academics">Academics</a>
                                 </li>
