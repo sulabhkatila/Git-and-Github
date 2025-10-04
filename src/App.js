@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import BetaBanner from "./components/BetaBanner";
+import FAQ from "./components/FAQ";
 
 function App() {
     return (
@@ -38,6 +39,9 @@ function App() {
                         </li>
                         <li>
                             <a href="#campus-life">Campus Life</a>
+                        </li>
+                        <li>
+                            <a href="#faq">FAQ</a>
                         </li>
                         <li>
                             <a href="#contact">Contact</a>
@@ -151,6 +155,9 @@ function App() {
                         </div>
                     </div>
                 </section>
+
+                {/* FAQ Section */}
+                <FAQ />
 
                 {/* Campus Life */}
                 <section className="campus-life-section" id="campus-life">
