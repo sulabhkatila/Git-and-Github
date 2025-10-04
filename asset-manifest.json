@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Git-and-Github/static/css/main.50d3a448.css",
+    "main.js": "/Git-and-Github/static/js/main.bc234dbc.js",
+    "index.html": "/Git-and-Github/index.html",
+    "main.50d3a448.css.map": "/Git-and-Github/static/css/main.50d3a448.css.map",
+    "main.bc234dbc.js.map": "/Git-and-Github/static/js/main.bc234dbc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.50d3a448.css",
+    "static/js/main.bc234dbc.js"
+  ]
+}
