@@ -4,7 +4,7 @@ export default function BetaBanner() {
 	const [betaBannerText, setBetaBannerText] = useState('Loading...');
 
 	useEffect(() => {
-		fetch('betabanner.txt')
+		fetch('features/betabanner.txt')
 			.then(response => response.text())
 			.then(text => setBetaBannerText(text))
 			.catch(error => {
