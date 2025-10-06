@@ -1,7 +1,1 @@
-There are many majors available at SJNY, including:
-- Computer Science
-- Mathematics
-- Biology
-- Marketing
-- Accounting
-- ...
+
