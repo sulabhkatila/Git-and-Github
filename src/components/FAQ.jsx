@@ -67,6 +67,24 @@ const faqQuestions = [
       file: 'common_hour.txt',
       ticket: 'FAQ-011'
     },
+    {
+      id: 'online_or_hybrid',
+      question: 'Does the school offer online or hybrid classes?',
+      file: 'online-or-hybrid-classes.txt',
+      ticket: 'FAQ-012'
+    },
+    {
+      id: 'work_study',
+      question: 'Does the school provide work-study programs?',
+      file: 'work-study-programs.txt',
+      ticket: 'FAQ-013'
+    },
+    {
+      id: 'closest_train_brooklyn',
+      question: 'What is the closest train station for the Brooklyn campus?',
+      file: 'closest-train-station-brooklyn.txt',
+      ticket: 'FAQ-014'
+    },
 ];
 
 export default function FAQ() {
